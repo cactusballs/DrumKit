@@ -1,0 +1,106 @@
+html {
+  font-size: 10px;
+  background: #1d313c;;
+  background-size: cover;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Spartan', 'Montserrat', 'Futura', sans-serif; /* only fonts allowed */
+}
+
+h1{
+  color: #fddca9;
+  display: flex;
+  font-size: 7rem;
+  margin: 4rem 0 6rem 10rem;
+  padding:0;
+
+  
+}
+/* text animation bit  */
+.stayAwhile{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 0;
+  
+}
+
+.animate{
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #346B6D 8%,
+    #FC7643 29%,
+    #FA3641 67%,
+    #F9982F 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-emphasis-color: transparent; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 10s linear infinite;
+  display: inline-block;
+      font-size: 3rem;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* keys for the actual drum */
+.keys {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  padding: 0;
+}
+.key {
+  border: .4rem solid #592717;
+  border-radius: .5rem;
+  margin: 1rem;
+  margin-top: 0;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem  #592717;
+}
+
+.playing {
+  transform: scale(0.7); /* how long between clicking and it snapping back*/
+  border-color: #fea712;
+  box-shadow: 0 0 1rem #e76219;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #fddca9;
+}
+
+footer{
+  color: #fddca9;
+  display: flex;
+  font-size: 2rem;
+  margin: 30rem 0 5rem 10rem;
+  padding:0;
+}
