@@ -28,7 +28,7 @@ JavaScript: Logic for audio playback and DOM manipulation.
 ## Installation
 
 Clone the repository:
-git clone https://github.com/cactusballs/drum-kit.git
+git clone git@github.com:cactusballs/DrumKit.git
 Open index.html in your browser.
 
 ## The finished site 
